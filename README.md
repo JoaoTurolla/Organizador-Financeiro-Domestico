@@ -5,7 +5,7 @@ Requisitos:
   - Node.js (especificamente pelo npm)
   - Dotnet sdk (dotnet run e dotnet restore)
 
-Instruções de uso:
+# Instruções de uso
 
 1. Clone o repositório com: git clone https://github.com/JoaoTurolla/Organizador-Financeiro-Domestico
 2. Atualize as variáveis nas duas .env.example e remova o .example do nome (Uma estará na pasta do cliente e outra do servidor)
@@ -14,7 +14,7 @@ Instruções de uso:
 5. Inicie o servidor com "dotnet run" ainda na pasta raíz, certifique-se que o endereço em que o servidor está é o mesmo colocado na env do cliente, e então vá para a pasta raíz do cliente e use o comando "npm run dev", agora certifique-se que o endereço que o cliente está é o mesmo colocado na env do servidor.
 6. Abra o navegador no endereço do cliente e está tudo pronto
 
-Pontos importantes:
+# Pontos importantes
   Na pasta do servidor será criado uma pasta Data/ que conterá dois arquivos .json; Note que no arquivo users.json todos os usuários terão o campo { "FamilyId": 1, }, este campo pode ser alterado, levando em consideração que:
 
   1. Todas as transações desse usuário previamente existentes a essa mudança necessitarão a mesma mudança para que a tabela da família funcione corretamente;
