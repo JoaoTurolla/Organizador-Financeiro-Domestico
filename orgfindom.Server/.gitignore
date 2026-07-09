@@ -1,0 +1,27 @@
+# Pastas de Compilação do .NET
+bin/
+obj/
+
+# Banco de Dados Local Simulado (DbSim)
+Data/
+*.json.user
+
+# Variáveis de ambiente
+*.env
+*.env.*.local
+*env.local
+
+# Diretórios do VS Code e Visual Studio
+.vscode/*
+!.vscode/extensions.json
+.vs/
+.idea
+.DS_Store
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,171 @@
+#homepage-layout {
+    display: flex;
+    height: 100%; 
+    width: 100%;
+    background-color: #f4f4f9;
+}
+
+#lateral-navigator {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #1a252f;
+}
+
+#lateral-navigator .logo-area {
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid #34495e;
+    text-align: center;
+}
+
+#users-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#users-list button {
+    width: 100%;
+    padding: 15px 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #34495e;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#users-list button:hover {
+    background-color: #34495e;
+}
+
+#main-content {
+    flex: 1; /* Lembra que tu colocou isso porque ocupa o resto do espaço */
+    display: flex;
+    flex-direction: column;
+}
+
+#top-header {
+    height: 70px;
+    background-color: white;
+    border-bottom: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+/* Tabela básica e funcional */
+#table-component {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid whitesmoke;
+}
+
+.transaction-table th, .transaction-table td {
+    border: 1px solid whitesmoke;
+    padding: 12px;
+    text-align: left;
+}
+
+.transaction-table th {
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+.delete-transaction-button{
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#users-list li.user-list-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 0;
+}
+
+#users-list li.user-list-item .reload-transactions-button {
+    width: 100%;
+    text-align: left;
+    padding: 15px 10px 15px 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#users-list li.user-list-item .delete-user-button {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.transaction-table td {
+    color: black;
+    padding: 12px;
+    border: 1px solid whitesmoke;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-actions .header-btn, 
+.header-actions .modal-open {
+    height: 38px; 
+    padding: 0 15px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.header-actions .header-btn:hover, 
+.header-actions .modal-open:hover {
+    background-color: #e2e6ea;
+}
+
+.header-actions .logout-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.header-actions .logout-btn:hover {
+    background-color: #5a6268;
+}

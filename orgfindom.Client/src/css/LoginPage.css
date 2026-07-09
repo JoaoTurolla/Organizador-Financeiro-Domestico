@@ -1,0 +1,58 @@
+#login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* #login-page-title {
+  position: absolute;
+  top: 10%;
+  color: #1a1a1a;
+  text-align: center;
+}
+  Removido por: sem ideia pra um nome decente;
+*/
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border: 1px solid #cccccc; /* Borda para destacar o formulário do fundo */
+}
+
+#login-title {
+  color: #333333;
+}
+
+.login-input {
+  margin: 0.5rem 0;
+  background-color: #f9f9f9;
+  color: #000000;
+  border: 1px solid #aaaaaa;
+}
+
+.login-button {
+  margin-top: 1rem;
+  background-color: #646cff;
+  color: #ffffff;
+  border: none;
+}
+
+.modal-open {
+  margin-top: 1.5rem;
+  background-color: transparent;
+  color: #646cff;
+  border: 1px solid #646cff;
+}
+
+.login-error {
+  color: #ff4d4f; /* Cor vermelha para destacar o erro */
+  text-align: center;
+}
